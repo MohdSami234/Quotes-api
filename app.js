@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 const seedDB = require('./seed');
 const quotesRoutes = require('./api/routes');
 const cors = require('cors');
-
+app.use(cors());
 
 
 mongoose.connect('mongodb://localhost:27017/quotes-db')
@@ -12,7 +12,7 @@ mongoose.connect('mongodb://localhost:27017/quotes-db')
     .catch((err) => console.log(err));
 
 
-app.use(cors());
+
 
 app.use(express.json());
 
