@@ -12,10 +12,7 @@ mongoose.connect('mongodb://localhost:27017/quotes-db')
     .catch((err) => console.log(err));
 
 
-
-app.use(cors({
-  origin:['http://localhost:3000']
-}));
+app.use(cors());
 
 app.use(express.json());
 
