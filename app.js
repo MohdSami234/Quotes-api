@@ -30,8 +30,8 @@ app.use(quotesRoutes);
 
 
 
-const port = process.env.PORT || 8000;
 
-app.listen(port,()=>{
-  console.log(`server started at port ${port}`);
+const port = process.env.PORT || 4000;
+app.listen(port, () => {
+    console.log(`server running`);
 });
